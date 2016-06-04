@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:background="@color/red_500"
+        android:layout_height="72dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo2"
+            android:padding="24dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_perfomation"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_marginTop="@dimen/margin_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn được"
+                android:textColor="@android:color/white"
+                android:layout_toLeftOf="@+id/tv2"
+                android:textSize="@dimen/tv_score"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginTop="@dimen/margin_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="5"
+                android:textColor="@color/red_500"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/tv_score"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_marginTop="@dimen/margin_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="điểm"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textSize="@dimen/tv_score"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="550dp"
+            android:visibility="visible"
+            android:background="@drawable/bg_perfomation"
+            android:paddingTop="48dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp"
+            android:layout_height="350dp">
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:hint="Họ và tên"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:background="@drawable/bg_edittext"/>
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:hint="Số điện thoại"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/ed_name"
+                android:padding="16dp"
+                android:inputType="phone"
+                android:background="@drawable/bg_edittext"/>
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/ed_phone"
+                android:padding="16dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_edittext"/>
+
+            <Button
+                android:id="@+id/bt_quaythuong"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/ed_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="QUAY THƯỞNG"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:background="@drawable/bg_quay_thuong"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_quaythuong"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_wheel"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lucky_cricle2"/>
+
+        <Button
+            android:id="@+id/bt_start_lucky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_start_lucky"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_gift"
+        android:layout_centerInParent="true"
+        android:layout_width="550dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_perfomation"
+        android:layout_height="350dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chúc mừng bạn nhận được phần quà"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/ic_quabong"/>
+
+        <TextView
+            android:id="@+id/tv_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 quả bóng logo Z.com"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/iv_gift"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/bt_out"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="THOÁT"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:background="@drawable/bg_quay_thuong"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

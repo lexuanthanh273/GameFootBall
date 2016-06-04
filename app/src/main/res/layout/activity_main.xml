@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_content"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:background="@color/red_500"
+        android:layout_height="72dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo2"
+            android:padding="24dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/time_countdown"
+            android:layout_marginTop="8dp"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="14dp"
+            android:max="15"
+            android:rotation="0"
+            android:interpolator="@android:anim/linear_interpolator"
+            android:progressDrawable="@drawable/circular"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:textStyle="bold"
+            android:text="15"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/bt_question1"
+            android:layout_width="@dimen/bt_question_width"
+            android:layout_height="@dimen/bt_question_height"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cau1_active"/>
+        <Button
+            android:id="@+id/bt_question2"
+            android:layout_width="@dimen/bt_question_width"
+            android:layout_height="@dimen/bt_question_height"
+            android:background="@drawable/cau2"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_question1"/>
+        <Button
+            android:id="@+id/bt_question3"
+            android:layout_width="@dimen/bt_question_width"
+            android:layout_height="@dimen/bt_question_height"
+            android:background="@drawable/cau3"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/bt_question2"/>
+        <Button
+            android:id="@+id/bt_ket_thuc"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/bt_question_height"
+            android:background="@drawable/bt_nhan_qua"
+            android:text="Kết thúc"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_time"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question_name"
+                android:layout_width="1000dp"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Ba cầu thủ thuộc đội tuyển Việt Nam là?"
+                android:textColor="@color/question"
+                android:textSize="26sp"
+                android:textStyle="normal" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_result"
+                    android:layout_marginRight="@dimen/margin_result"
+                    android:layout_weight="0" >
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_chosse_peolpe"/>
+                    <ImageView
+                        android:id="@+id/image_content1"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="14dp"/>
+                    <Button
+                        android:id="@+id/bt_delete1"
+                        android:layout_width="@dimen/bt_delete"
+                        android:layout_height="@dimen/bt_delete"
+                        android:background="@drawable/delete"
+                        android:layout_alignParentRight="true"/>
+                    <ImageView
+                        android:id="@+id/iv_result1"
+                        android:layout_width="@dimen/bt_result"
+                        android:layout_height="@dimen/bt_result"
+                        android:src="@drawable/ic_true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="16dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_2"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_result"
+                    android:layout_marginRight="@dimen/margin_result">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/chosse_people" />
+                    <ImageView
+                        android:id="@+id/image_content2"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="14dp"/>
+                    <Button
+                        android:id="@+id/bt_delete2"
+                        android:layout_width="@dimen/bt_delete"
+                        android:layout_height="@dimen/bt_delete"
+                        android:background="@drawable/delete"
+                        android:layout_alignParentRight="true"/>
+                    <ImageView
+                        android:id="@+id/iv_result2"
+                        android:layout_width="@dimen/bt_result"
+                        android:layout_height="@dimen/bt_result"
+                        android:src="@drawable/ic_true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="16dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_3"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_result"
+                    android:layout_marginRight="@dimen/margin_result" >
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/chosse_people"/>
+                    <ImageView
+                        android:id="@+id/image_content3"
+                        android:layout_width="167dp"
+                        android:layout_height="167dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="14dp"/>
+                    <Button
+                        android:id="@+id/bt_delete3"
+                        android:layout_width="@dimen/bt_delete"
+                        android:layout_height="@dimen/bt_delete"
+                        android:background="@drawable/delete"
+                        android:layout_alignParentRight="true"/>
+                    <ImageView
+                        android:id="@+id/iv_result3"
+                        android:layout_width="@dimen/bt_result"
+                        android:layout_height="@dimen/bt_result"
+                        android:src="@drawable/ic_wrong"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="16dp"/>
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                style="@style/scrollbar_shape_style"
+                android:layout_margin="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/case_horizontal_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

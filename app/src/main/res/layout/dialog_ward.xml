@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="560dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_ward"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số lượng các phần quà"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng bóng:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_bong"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng áo:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_ao"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng bút:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_but"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng case Ip 6:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_case"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng balo:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_balo"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng mũ:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_mu"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Số lượng áo mưa:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_ao_mua"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+
+        <Button
+            android:id="@+id/bt_enter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cập nhập"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_ward"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Username:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tab2"
+            android:layout_below="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password:"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_ward"
+                android:padding="16dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="16dp"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab2"
+            android:layout_centerHorizontal="true"
+            android:text="Đăng nhập" />
+    </RelativeLayout>
+</RelativeLayout>
